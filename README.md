@@ -39,7 +39,11 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 ## Steps Performed:
 - Set Up a SAFE LINK policy:
   - In Microsoft Defender, navigate to Email & collaboration -> Policies & rules -> Threat policies -> Safe Links
-<img width="975" height="540" alt="image" src="https://github.com/user-attachments/assets/12963442-eceb-489a-8c1a-5e5f4ab36117" />
+<img width="750" height="418" alt="image" src="https://github.com/user-attachments/assets/2a670009-bdec-413e-be91-9c92eca7122d" />
+
+
+
+
 
 
 - Deployed the Microsoft Sentinel Training Lab solution.
