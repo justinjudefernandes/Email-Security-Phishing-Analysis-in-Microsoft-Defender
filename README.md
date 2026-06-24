@@ -87,7 +87,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 <img width="751" height="431" alt="image" src="https://github.com/user-attachments/assets/7a65c3e8-4909-4499-ab90-13199f030b59" />
 
 #### Threat Intelligence Correlation (OSINT)
-- Investigated embedded URL using VirusTotal
+- Investigated embedded URL using VirusTotal.
   - URL was flagged as malicious by 5 security vendors.
 - Performed OSINT analysis on source IP address: 79.135.106.97
   - IP had prior malicious reports. (last seen ~5 months ago)
@@ -97,7 +97,14 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 <img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/51c431c0-4be2-449b-8081-a90c1a128be9" />
 <img width="749" height="457" alt="image" src="https://github.com/user-attachments/assets/950fa6c8-9d41-494a-b4c6-fe89911c637a" />
 
+### Incident Response Action
+- Based on corroborated OSINT findings and Defender telemetry:
+  - Confirmed email contained malicious URL and suspicious origin infrastructure.
+  - Executed remediation by deleting the email from user mailboxes.
+  - Prevented further user interaction with the phishing content.
 
+ 📌 Screenshot as below:
+<img width="749" height="412" alt="image" src="https://github.com/user-attachments/assets/bad41887-5f9b-412a-a7af-0dd5a54e033f" />
 
 
 
