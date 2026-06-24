@@ -110,12 +110,60 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 ## SOC Phishing Investigation Report:
 ### Incident Overview:
 - Timestamp: June 18, 2026 – 21:04 (UTC +04:00)
-- Recipient: bob@corp88.onmicrosoft.com
+- Recipient: bob@corp88[.]onmicrosoft[.]com
 - Subject: Salary Revision
-- Sender Email: strangeaccount88@proton.me
+- Sender Email: strangeaccount88@proton[.]me
 - Sender IP Address: 79.135.106.97
-- Attachment: Salary Revision.docx
+- Attachment: Salary Revision[.]docx
 - Embedded URL: hxxps[://]shareholds[.]com/nam/…
 
 A phishing email impersonating an HR-related salary update was delivered to the target mailbox. The message contained both a malicious document attachment and a credential-harvesting URL designed to prompt user interaction.
 
+### Indicators of Compromise (IOCs):
+- Malicious URL: Flagged by VirusTotal as malicious across multiple security vendors.
+- Sender IP (79.135.106.97): Reported as malicious on AbuseIPDB.
+- Phishing Infrastructure: External ProtonMail sender used to deliver payload.
+
+### Investigation Summary:
+
+At 21:04 UTC+04:00 on June 18, 2026, a phishing email titled “Salary Revision” was delivered to the organization’s mailbox. The email leveraged a social engineering lure related to payroll updates and contained:
+
+A Microsoft Word attachment (Salary Revision.docx)
+A malicious URL intended to redirect the user to an external resource
+
+OSINT validation confirmed multiple malicious indicators associated with both the URL and the sender infrastructure. VirusTotal detections classified the URL as malicious, while AbuseIPDB reports confirmed prior malicious activity associated with the source IP address.
+
+Further investigation is required to determine:
+
+Whether additional users were targeted
+Whether the URL or attachment was accessed
+Whether credential theft, malware execution, or unauthorized access occurred
+4. Triage (5W1H Analysis)
+
+Who
+
+Sender: strangeaccount88@proton.me
+Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
+
+What
+
+Phishing email containing:
+Malicious URL
+Suspicious attachment (Salary Revision.docx)
+
+When
+
+June 18, 2026 – 21:04 (UTC +04:00)
+
+Where
+
+Recipient: bob@corp88.onmicrosoft.com
+Subject: Salary Revision
+
+Why
+
+Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources
+
+How
+
+Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation
