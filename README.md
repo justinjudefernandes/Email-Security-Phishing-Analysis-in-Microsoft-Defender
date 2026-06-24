@@ -109,6 +109,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 
 
 ## SOC Phishing Investigation Report:
+
 ### Incident Overview:
 - Timestamp: June 18, 2026 – 21:04 (UTC +04:00)
 - Recipient: bob@corp88[.]onmicrosoft[.]com
@@ -149,6 +150,44 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - Recipient: bob@corp88.onmicrosoft.com
   - Subject: Salary Revision
 - Why:
-  - Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources
+  - Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources.
 - How:
-  - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation
+  - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation.
+
+### Response Actions:
+- Removed phishing email from all affected mailboxes.
+- Blocked malicious indicators:
+  - Sender email
+  - Sender IP address
+  - URL domain and path
+  - Associated attachment indicators
+- Conducted tenant-wide search across:
+  - Sender address
+  - IP address
+  - URL
+  - Attachment name and related artifacts
+- Investigated user interaction with:
+  - URL access
+  - Credential submission attempts
+  - Attachment execution or download
+- Deployed targeted user awareness notification referencing the “Salary Revision” phishing attempt.
+
+### Recommendations:
+- Enhance email security posture using:
+  - Microsoft Defender for Office 365 Safe Links
+  - Safe Attachments detonation policies
+  - Anti-phishing impersonation protections
+- Strengthen email authentication enforcement:
+  - SPF, DKIM, and DMARC alignment and strict policy enforcement.
+- Improve detection tuning for HR/payroll-themed phishing campaigns.
+- Enable continuous monitoring for anomalous authentication and credential abuse patterns.
+- Conduct periodic phishing simulation exercises to reinforce user awareness.
+- Perform gap analysis on email security controls to identify bypass conditions.
+
+### Lessons Learned:
+- Email-based threats can bypass initial filters when using trusted-looking HR or payroll lures.
+- OSINT validation (VirusTotal, AbuseIPDB) is critical for confirming malicious indicators quickly.
+- Message header analysis provides key visibility into email authenticity and routing.
+- Early user interaction prevention is essential to limit credential theft and payload execution.
+- Regular tuning of Safe Links and Safe Attachments policies improves detection coverage.
+- Tenant-wide hunting helps assess blast radius and identify additional impacted users.
