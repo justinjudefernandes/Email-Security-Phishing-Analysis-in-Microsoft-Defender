@@ -39,7 +39,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 ## Steps Performed:
 ### Safe Links Policy Configuration:
 - Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
-  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links.
+  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links
   - Created and deployed a policy named: 'MyDFIR-Justin-SafeLinksforInvestigation'.
   - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects.
 
@@ -49,7 +49,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 
 ### Safe Attachments Policy Configuration:
 - Implemented a Safe Attachments policy to provide detonation-based malware protection for email attachments.
-  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Attachments.
+  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Attachments
   - Created a policy named: 'MyDFIR-Justin-SafeAttachments&Links'.
   - Configured attachment scanning to detect and block potentially malicious payloads before delivery.
 
@@ -72,7 +72,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 
 #### Email Analysis Workflow:
 - Navigated to: Email & collaboration → Explorer
-- Extracted and analyzed the email message header for forensic inspection
+- Extracted and analyzed the email message header for forensic inspection.
 - Parsed key header fields using Notepad++ for structured review, including:
   - Received chain (mail routing path)
   - Authentication-Results (SPF/DKIM/DMARC validation)
@@ -81,7 +81,24 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
   - Return-Path
   - X-Forefront-Antispam-Report
 
-📌 These fields were used to trace message origin, validate authentication, and identify potential spoofing indicators.
+📌 Below are the screenshots captured during the Email Workflow Analysis:
+<img width="749" height="317" alt="image" src="https://github.com/user-attachments/assets/fdaca9c9-835b-4cb7-80cf-f1c9a2e992fa" />
+<img width="748" height="418" alt="image" src="https://github.com/user-attachments/assets/62abcffd-af78-4f77-b29b-178c9fb39453" />
+<img width="751" height="431" alt="image" src="https://github.com/user-attachments/assets/7a65c3e8-4909-4499-ab90-13199f030b59" />
+
+#### Threat Intelligence Correlation (OSINT)
+- Investigated embedded URL using VirusTotal
+  - URL was flagged as malicious by 5 security vendors.
+- Performed OSINT analysis on source IP address: 79.135.106.97
+  - IP had prior malicious reports. (last seen ~5 months ago)
+  - Associated with suspicious activity patterns consistent with phishing infrastructure.
+
+📌 Below are the screenshots of the OSINT performed:
+<img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/51c431c0-4be2-449b-8081-a90c1a128be9" />
+<img width="749" height="457" alt="image" src="https://github.com/user-attachments/assets/950fa6c8-9d41-494a-b4c6-fe89911c637a" />
+
+
+
 
 
 - Connected Microsoft Defender XDR to Microsoft Sentinel.
