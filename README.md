@@ -38,11 +38,13 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 
 ## Steps Performed:
 - Set Up a SAFE LINK policy:
-  - In Microsoft Defender, navigate to Email & collaboration -> Policies & rules -> Threat policies -> Safe Links
-<img width="750" height="418" alt="image" src="https://github.com/user-attachments/assets/2a670009-bdec-413e-be91-9c92eca7122d" />
+  - Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
+  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links
+  - Created and deployed a policy named: MyDFIR-Justin-SafeLinksforInvestigation
+  - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects
 
-  - Below is the summary of the created policy named ‘MyDFIR-Justin-SafeLinksforInvestigation’: 
-<img width="748" height="411" alt="image" src="https://github.com/user-attachments/assets/4e06a4d1-42e9-4e20-a030-7aee911abad6" />
+📌 Refer to attached screenshot for policy configuration and summary details.
+
 
 
 - Connected Microsoft Defender XDR to Microsoft Sentinel.
