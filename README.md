@@ -107,60 +107,15 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 <img width="749" height="412" alt="image" src="https://github.com/user-attachments/assets/bad41887-5f9b-412a-a7af-0dd5a54e033f" />
 
 
-## Investigation Report:
+## SOC Phishing Investigation Report:
+### Incident Overview:
+- Timestamp: June 18, 2026 – 21:04 (UTC +04:00)
+- Recipient: bob@corp88.onmicrosoft.com
+- Subject: Salary Revision
+- Sender Email: strangeaccount88@proton.me
+- Sender IP Address: 79.135.106.97
+- Attachment: Salary Revision.docx
+- Embedded URL: hxxps[://]shareholds[.]com/nam/…
 
-#### Phishing Email Investigation:
-A phishing email impersonating SharePoint was delivered to an executive mailbox despite multiple authentication failures and a phishing verdict.
+A phishing email impersonating an HR-related salary update was delivered to the target mailbox. The message contained both a malicious document attachment and a credential-harvesting URL designed to prompt user interaction.
 
-#### Query Used:
-- MailGuard365_Threats_CL     
-  | where ThreatVerdict contains "phish" and Direction == "Inbound"
-  | where Action contains "Allow" and SPFResult == "Fail" and DKIMResult == "None" and DMARCResult == "Fail"
-  | sort by ThreatConfidence
-
-<img width="758" height="420" alt="image" src="https://github.com/user-attachments/assets/a788bad8-b715-4eff-b256-0f427dfbb744" />
-
-
-#### Indicators Identified:
-- IP: 185.220.101.55
-- Domain: sh4repoint-pkwork[.]xyz
-- Recipient: ceo@pkwork.onmicrosoft.com
-- Subject: SharePoint: Board meeting documents shared with you
-- Attachment: Q4-Board-Meeting-Agenda.docx
-- Verdict: Phishing (Confidence: 93)
-- Email Authentication: SPF Fail | DKIM None | DMARC Fail
-- Delivery Status: Allowed
-
-#### Investigation:
-A phishing email was received on 2026‑06‑11 07:17:42 UTC from sharepoint-notify@h4repoint-pkwork[.]xyz, originating from the malicious IP 185.220.101.55 (100% abuse on AbuseIPDB). The message included a typosquatted URL (hxxp[://]sh4repoint-pkwork[.]xyz/download/board-agenda) and a Word attachment (Q4-Board-Meeting-Agenda.docx). Email authentication checks failed (SPF/DMARC failed, DKIM none), yet the email was still delivered despite a phishing threat score of 93. An investigation is ongoing to determine whether the link or attachment was accessed and to assess any potential data exposure.
-
-<img width="501" height="428" alt="image" src="https://github.com/user-attachments/assets/b2b77daa-7009-497a-8ff9-1a268660d5fc" />
-<img width="1239" height="647" alt="image" src="https://github.com/user-attachments/assets/92f4a39a-9506-452d-a243-0b2f7fe7a7b9" />
-
-#### Incident Analysis:
-- WHO: Malicious sender IP 185.220.101.55 (100% abuse on AbuseIPDB).
-- WHAT: Phishing email from sharepoint-notify@sh4repoint-pkwork[.]xyz containing a typosquatted URL and the attachment Q4‑Board‑Meeting‑Agenda.docx.
-- WHEN: Sent on 2026‑06‑11 07:17:42 UTC and delivered despite failing email security checks.
-- WHERE: Targeted ceo@pkwork.onmicrosoft.com with subject “SharePoint: Board meeting documents shared with you.”  
-- WHY: Likely aimed at credential theft or delivering malware to compromise the CEO’s system.
-- HOW: Email passed through because the security gateway was likely not configured to block or quarantine such threats.
-
-#### Recommendations:
-- Use Threat Intelligence to verify sender IPs/domains; in this case, 185.220.101.55 was confirmed malicious.
-- Delete the identified phishing email and configure email security controls to automatically delete or quarantine similar phishing emails in the future.
-- Enable domain similarity protection to detect spoofed or look‑alike domains.
-- Search the organization for any other emails from 185.220.101.55 or sh4repoint-pkwork.xyz.
-- Conduct targeted phishing awareness training focused on identifying Microsoft 365 and SharePoint impersonation emails, recognizing typosquatted domains, verifying unexpected file-sharing requests, avoiding suspicious links and attachments, promptly reporting phishing attempts, and understanding the risks of credential theft, malware, and business email compromise (BEC).
-
-## Project Summary:
-By completing this project, I can now:
-- Deploy and configure Microsoft Sentinel.
-- Connect Microsoft Defender XDR data sources.
-- Create custom KQL queries for threat hunting.
-- Build Sentinel workbooks and dashboards.
-- Create detection rules for security monitoring.
-- Investigate phishing incidents using log data and threat intelligence.
-- Use bookmarks and incidents to support SOC workflows.
-
-## Most Impactful Learning Experience:
-The phishing investigation provided the most realistic SOC experience by combining threat hunting, log analysis, threat intelligence validation, incident creation, and remediation recommendations into a single workflow.
