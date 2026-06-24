@@ -131,36 +131,24 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - A malicious URL intended to redirect the user to an external resource.
 - OSINT validation confirmed multiple malicious indicators associated with both the URL and the sender infrastructure. VirusTotal detections classified the URL as malicious, while AbuseIPDB reports confirmed prior malicious activity associated with the source IP address.
 - Further investigation is required to determine:
-  - Whether additional users were targeted
-  - Whether the URL or attachment was accessed
-  - Whether credential theft, malware execution, or unauthorized access occurred
+  - Whether additional users were targeted.
+  - Whether the URL or attachment was accessed.
+  - Whether credential theft, malware execution, or unauthorized access occurred.
 
 ### Triage (5W1H Analysis):
-
-Who
-
-Sender: strangeaccount88@proton.me
-Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
-
-What
-
-Phishing email containing:
-Malicious URL
-Suspicious attachment (Salary Revision.docx)
-
-When
-
-June 18, 2026 – 21:04 (UTC +04:00)
-
-Where
-
-Recipient: bob@corp88.onmicrosoft.com
-Subject: Salary Revision
-
-Why
-
-Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources
-
-How
-
-Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation
+- Who:
+  - Sender: strangeaccount88@proton.me
+  - Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
+- What:
+  - Phishing email containing:
+    - Malicious URL
+    - Suspicious attachment (Salary Revision.docx)
+- When:
+  - June 18, 2026 – 21:04 (UTC +04:00)
+- Where:
+  - Recipient: bob@corp88.onmicrosoft.com
+  - Subject: Salary Revision
+- Why:
+  - Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources
+- How:
+  - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation
