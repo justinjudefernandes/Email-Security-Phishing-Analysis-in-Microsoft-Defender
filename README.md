@@ -86,7 +86,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 <img width="748" height="418" alt="image" src="https://github.com/user-attachments/assets/62abcffd-af78-4f77-b29b-178c9fb39453" />
 <img width="751" height="431" alt="image" src="https://github.com/user-attachments/assets/7a65c3e8-4909-4499-ab90-13199f030b59" />
 
-#### Threat Intelligence Correlation (OSINT)
+#### Threat Intelligence Correlation (OSINT):
 - Investigated embedded URL using VirusTotal.
   - URL was flagged as malicious by 5 security vendors.
 - Performed OSINT analysis on source IP address: 79.135.106.97
@@ -97,7 +97,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 <img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/51c431c0-4be2-449b-8081-a90c1a128be9" />
 <img width="749" height="457" alt="image" src="https://github.com/user-attachments/assets/950fa6c8-9d41-494a-b4c6-fe89911c637a" />
 
-### Incident Response Action
+### Incident Response Action:
 - Based on corroborated OSINT findings and Defender telemetry:
   - Confirmed email contained malicious URL and suspicious origin infrastructure.
   - Executed remediation by deleting the email from user mailboxes.
@@ -106,68 +106,6 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
  📌 Screenshot as below:
 <img width="749" height="412" alt="image" src="https://github.com/user-attachments/assets/bad41887-5f9b-412a-a7af-0dd5a54e033f" />
 
-
-
-- Connected Microsoft Defender XDR to Microsoft Sentinel.
-<img width="703" height="392" alt="image" src="https://github.com/user-attachments/assets/e3ca776d-1fb0-43de-a66d-60213ac72d34" />
-<img width="703" height="361" alt="image" src="https://github.com/user-attachments/assets/1fe6353e-235d-407e-85b8-0f84a551088f" />
-
-- Developed KQL queries to: 
-   - Identify malicious sender domains
-   - Analyze Azure activity logs
-   - Investigate error events
-<img width="683" height="411" alt="image" src="https://github.com/user-attachments/assets/6b1b4b28-866e-49b2-a63d-1495c551a891" />
-<img width="691" height="264" alt="image" src="https://github.com/user-attachments/assets/96517f56-2665-4ca4-8607-930a36b54324" />
-<img width="691" height="240" alt="image" src="https://github.com/user-attachments/assets/9e4bc1bc-a288-48d8-a219-7b11f668fe3d" />
-
-
-- Created a custom Sentinel Workbook containing: 
-   - Activity Volume
-   - Top 5 Failed User Logins 
-   - Malicious Sender Domains
-   - Successful Activities
-<img width="752" height="335" alt="image" src="https://github.com/user-attachments/assets/c27e33db-3878-4e83-8ef5-f4dbf229e7cf" />
-<img width="752" height="215" alt="image" src="https://github.com/user-attachments/assets/8be7fdfa-674a-49cf-9243-3e4438782f4b" />
-<img width="750" height="259" alt="image" src="https://github.com/user-attachments/assets/2aa9a5e9-e694-4a6f-99c0-8737cf53db0e" />
-<img width="749" height="270" alt="image" src="https://github.com/user-attachments/assets/6e9be7fc-8329-45be-a95d-13b9dafd8166" />
-
-- Created a detection rule to identify accounts with excessive failed logons using Event ID 4625:
-<img width="752" height="419" alt="image" src="https://github.com/user-attachments/assets/f9123fa4-66f1-4b79-b928-5c72c3a839c0" />
-<img width="752" height="419" alt="image" src="https://github.com/user-attachments/assets/262fc0a0-8e10-46bd-8c31-30a0b5bc15b6" />
-<img width="752" height="419" alt="image" src="https://github.com/user-attachments/assets/f93c95cf-9e47-4cb0-a594-d530540b03fc" />
-
-- Investigated a phishing email that was marked as phishing but still allowed into the environment.
-<img width="738" height="384" alt="image" src="https://github.com/user-attachments/assets/031e615b-4443-4c2c-bc6e-3e62d9a13b4a" />
-
-- Created bookmarks and converted findings into a security incident for further analysis.
-<img width="749" height="413" alt="image" src="https://github.com/user-attachments/assets/44746922-2fa1-4d4f-9bb0-4982e590cd41" />
-<img width="750" height="408" alt="image" src="https://github.com/user-attachments/assets/65103eb7-8425-4c45-85ea-32c971982e3c" />
-<img width="749" height="414" alt="image" src="https://github.com/user-attachments/assets/b3e3b924-5344-4078-9c11-06d6079ab9f5" />
-
-
-#### Key Findings:
-- A phishing email successfully bypassed email controls despite:
-   - SPF failure 
-   - DMARC failure 
-   - Missing DKIM validation 
-   - High threat confidence score 
-- The sender domain used typosquatting techniques to impersonate Microsoft SharePoint. 
-- The sender IP had a malicious reputation according to threat intelligence sources.
-
-#### What I Learned:
-- How Microsoft Sentinel integrates with Microsoft Defender XDR.
-- How to build effective KQL queries for threat hunting.
-- How workbooks improve visibility into security data.
-- How detection rules automate security monitoring.
-- How phishing campaigns can bypass security controls when policies are not properly configured.
-- How bookmarks and incidents support SOC investigations.
-
-#### What I Would Do Differently in a Production SOC:
-- Enable stricter email filtering and anti-spoofing policies.
-- Configure automatic quarantine actions for high-confidence phishing emails.
-- Implement domain similarity protection.
-- Automate threat intelligence enrichment using Sentinel playbooks.
-- Create automated incident response workflows for phishing detections.
 
 ## Investigation Report:
 
