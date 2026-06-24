@@ -37,13 +37,10 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - Security recommendations and remediation actions
 
 ## Steps Performed:
-- Created Azure resources including: 
-  - Resource Group
-  - Log Analytics Workspace
-  - Microsoft Sentinel
-<img width="807" height="455" alt="image" src="https://github.com/user-attachments/assets/b8613e4d-36e6-41a9-baa9-aff1d880788a" />
-<img width="800" height="437" alt="image" src="https://github.com/user-attachments/assets/41c15be4-35b3-4c92-9f79-c7c6d9417fb7" />
-<img width="804" height="439" alt="image" src="https://github.com/user-attachments/assets/0dad3ae2-c41b-46ce-b9ed-2565f6cf9f0b" />
+- Set Up a SAFE LINK policy:
+  - In Microsoft Defender, navigate to Email & collaboration -> Policies & rules -> Threat policies -> Safe Links
+<img width="975" height="540" alt="image" src="https://github.com/user-attachments/assets/12963442-eceb-489a-8c1a-5e5f4ab36117" />
+
 
 - Deployed the Microsoft Sentinel Training Lab solution.
 <img width="707" height="386" alt="image" src="https://github.com/user-attachments/assets/7a0cae76-8002-49e1-8dd1-79677f96b14d" />
