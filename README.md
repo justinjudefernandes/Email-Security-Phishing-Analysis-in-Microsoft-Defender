@@ -41,13 +41,9 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
   - In Microsoft Defender, navigate to Email & collaboration -> Policies & rules -> Threat policies -> Safe Links
 <img width="750" height="418" alt="image" src="https://github.com/user-attachments/assets/2a670009-bdec-413e-be91-9c92eca7122d" />
 
+  - Below is the summary of the created policy named ‘MyDFIR-Justin-SafeLinksforInvestigation’: 
+<img width="748" height="411" alt="image" src="https://github.com/user-attachments/assets/4e06a4d1-42e9-4e20-a030-7aee911abad6" />
 
-
-
-
-
-- Deployed the Microsoft Sentinel Training Lab solution.
-<img width="707" height="386" alt="image" src="https://github.com/user-attachments/assets/7a0cae76-8002-49e1-8dd1-79677f96b14d" />
 
 - Connected Microsoft Defender XDR to Microsoft Sentinel.
 <img width="703" height="392" alt="image" src="https://github.com/user-attachments/assets/e3ca776d-1fb0-43de-a66d-60213ac72d34" />
