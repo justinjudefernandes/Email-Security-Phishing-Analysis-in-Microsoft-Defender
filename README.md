@@ -37,31 +37,31 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - Security recommendations and remediation actions
 
 ## Steps Performed:
-- Safe Links Policy Configuration:
-  - Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
-  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links
-  - Created and deployed a policy named: 'MyDFIR-Justin-SafeLinksforInvestigation'
-  - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects
+### Safe Links Policy Configuration:
+- Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
+  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links.
+  - Created and deployed a policy named: 'MyDFIR-Justin-SafeLinksforInvestigation'.
+  - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects.
 
 📌 Refer to below screenshots for policy configuration and summary details.
 <img width="752" height="420" alt="image" src="https://github.com/user-attachments/assets/a6d4dfb9-f579-4f8e-b4b9-35d9a3a73eb5" />
 <img width="752" height="411" alt="image" src="https://github.com/user-attachments/assets/3e73cd77-0e17-4e44-8fbd-413ce6f4480a" />
 
-- Safe Attachments Policy Configuration:
-  - Implemented a Safe Attachments policy to provide detonation-based malware protection for email attachments.
-  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Attachments
-  - Created a policy named: 'MyDFIR-Justin-SafeAttachments&Links'
-  - Configured attachment scanning to detect and block potentially malicious payloads before delivery
+### Safe Attachments Policy Configuration:
+- Implemented a Safe Attachments policy to provide detonation-based malware protection for email attachments.
+  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Attachments.
+  - Created a policy named: 'MyDFIR-Justin-SafeAttachments&Links'.
+  - Configured attachment scanning to detect and block potentially malicious payloads before delivery.
 
 📌 Refer to below screenshots for policy summary and configuration settings.
 <img width="751" height="410" alt="image" src="https://github.com/user-attachments/assets/eccb3733-9b03-4668-8e1c-086e94839590" />
 <img width="753" height="413" alt="image" src="https://github.com/user-attachments/assets/feac727d-50dd-45a5-b7f3-df9be83aaac6" />
 
-- Policy Validation and Testing:
-  - Performed controlled testing to validate enforcement of Safe Links and Safe Attachments policies.
+### Policy Validation and Testing:
+- Performed controlled testing to validate enforcement of Safe Links and Safe Attachments policies.
   - Sent a test phishing-style email from a newly created external ProtonMail account: 'strangeaccount88@proton.me'
-  - Verified policy behavior through message inspection in Defender
-  - Confirmed that Safe Links and Safe Attachments protections were actively applied to the message content
+  - Verified policy behavior through message inspection in Defender.
+  - Confirmed that Safe Links and Safe Attachments protections were actively applied to the message content.
 
 📌 Screenshots demonstrate policy enforcement and inspection results within Microsoft Defender.
 <img width="749" height="286" alt="image" src="https://github.com/user-attachments/assets/b1a55330-82df-4099-8c4c-7062c319b7eb" />
