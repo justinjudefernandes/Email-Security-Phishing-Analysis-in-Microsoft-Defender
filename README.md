@@ -1,12 +1,12 @@
 # Email Security &amp; Phishing Analysis in Microsoft Defender
 
-## Objective:
+## 🎯 Objective:
 The Email Security & Phishing Analysis in Microsoft Defender project focused on configuring email security controls within Microsoft Defender for Office 365, validating their effectiveness against phishing threats, and performing an end-to-end phishing investigation. Through this project, I strengthened my skills in email security, threat analysis, OSINT, incident response, and Microsoft Defender technologies by simulating a real-world phishing attack scenario.
 
-## Project Overview:
+## 📊 Project Overview:
 This project focuses on implementing Safe Links and Safe Attachments policies in Microsoft Defender for Office 365, validating email protection controls, investigating a phishing email, analyzing email headers, performing OSINT on indicators of compromise (IOCs), and documenting incident response actions.
 
-### Tools Used:
+### 🧰 Tools Used:
 - Microsoft Defender for Office 365
 - Microsoft Defender XDR
 - Microsoft 365 Explorer
@@ -17,7 +17,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - AbuseIPDB
 - Proton Mail
 
-### Skill Developed:
+### 🛡️ Skill Developed:
 - Email security administration
 - Phishing investigation
 - Email header analysis
@@ -26,7 +26,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - Incident response
 - Microsoft Defender for Office 365
 
-### Key Deliverables:
+### 📁 Key Deliverables:
 - Safe Links policy configuration
 - Safe Attachments policy configuration
 - Email security policy testing
@@ -36,7 +36,7 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - Incident response documentation
 - Security recommendations and remediation actions
 
-## Steps Performed:
+## 🔍 Steps Performed:
 ### Safe Links Policy Configuration:
 - Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
   - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links
