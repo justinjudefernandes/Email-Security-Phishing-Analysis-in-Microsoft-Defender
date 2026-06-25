@@ -1,7 +1,7 @@
 # Email Security &amp; Phishing Analysis in Microsoft Defender
 
 ## Objective:
-The Email Security & Phishing Analysis in Microsoft Defender project documents my participation in the Day 16 Mini Project of the 30-Day MyDFIR Microsoft Challenge. The objective was to configure email security controls within Microsoft Defender for Office 365, validate their effectiveness against phishing threats, and perform an end-to-end phishing investigation. Through this project, I strengthened my skills in email security, threat analysis, OSINT, incident response, and Microsoft Defender technologies by simulating a real-world phishing attack scenario.
+The Email Security & Phishing Analysis in Microsoft Defender project focused on configuring email security controls within Microsoft Defender for Office 365, validating their effectiveness against phishing threats, and performing an end-to-end phishing investigation. Through this project, I strengthened my skills in email security, threat analysis, OSINT, incident response, and Microsoft Defender technologies by simulating a real-world phishing attack scenario.
 
 ## Project Overview:
 This project focuses on implementing Safe Links and Safe Attachments policies in Microsoft Defender for Office 365, validating email protection controls, investigating a phishing email, analyzing email headers, performing OSINT on indicators of compromise (IOCs), and documenting incident response actions.
