@@ -69,8 +69,6 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 
 ### Email Investigation and Threat Analysis:
 - Initiated an investigation using Microsoft Defender for a suspicious email alert.
-
-#### Email Analysis Workflow:
 - Navigated to: Email & collaboration → Explorer
 - Extracted and analyzed the email message header for forensic inspection.
 - Parsed key header fields using Notepad++ for structured review, including:
