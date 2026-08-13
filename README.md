@@ -134,7 +134,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - Whether the URL or attachment was accessed.
   - Whether credential theft, malware execution, or unauthorized access occurred.
 
-## 🧐 Triage (5W & 1H):
+### 🧐 Triage (5W & 1H):
 - Who:
   - Sender: strangeaccount88@proton.me
   - Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
@@ -152,7 +152,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - How:
   - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation.
 
-## 🛑 Response Actions:
+### 🛑 Response Actions:
 - Removed phishing email from all affected mailboxes.
 - Blocked malicious indicators:
   - Sender email
@@ -170,7 +170,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - Attachment execution or download
 - Deployed targeted user awareness notification referencing the “Salary Revision” phishing attempt.
 
-## 💡 Recommendations:
+### 💡 Recommendations:
 - Enhance email security posture using:
   - Microsoft Defender for Office 365 Safe Links
   - Safe Attachments detonation policies
@@ -182,7 +182,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - Conduct periodic phishing simulation exercises to reinforce user awareness.
 - Perform gap analysis on email security controls to identify bypass conditions.
 
-## 🧠 Security Operations Takeaways:
+### 🧠 Security Operations Takeaways:
 - Email-based threats can bypass initial filters when using trusted-looking HR or payroll lures.
 - OSINT validation (VirusTotal, AbuseIPDB) is critical for confirming malicious indicators quickly.
 - Message header analysis provides key visibility into email authenticity and routing.
