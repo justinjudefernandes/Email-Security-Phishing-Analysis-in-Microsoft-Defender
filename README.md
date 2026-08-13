@@ -43,9 +43,10 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - Created and deployed a policy named: 'MyDFIR-Justin-SafeLinksforInvestigation'.
   - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects.
 
-📌 Refer to the below screenshots for policy configuration and summary details.
-<img width="752" height="420" alt="image" src="https://github.com/user-attachments/assets/a6d4dfb9-f579-4f8e-b4b9-35d9a3a73eb5" />
-<img width="752" height="411" alt="image" src="https://github.com/user-attachments/assets/3e73cd77-0e17-4e44-8fbd-413ce6f4480a" />
+📌 Refer to the below screenshots: (left to right)
+
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/a6d4dfb9-f579-4f8e-b4b9-35d9a3a73eb5" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3e73cd77-0e17-4e44-8fbd-413ce6f4480a" />
 
 ### Safe Attachments Policy Configuration:
 - Implemented a Safe Attachments policy to provide detonation-based malware protection for email attachments.
@@ -53,9 +54,10 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - Created a policy named: 'MyDFIR-Justin-SafeAttachments&Links'.
   - Configured attachment scanning to detect and block potentially malicious payloads before delivery.
 
-📌 Refer to the below screenshots for policy summary and configuration settings.
-<img width="751" height="410" alt="image" src="https://github.com/user-attachments/assets/eccb3733-9b03-4668-8e1c-086e94839590" />
-<img width="753" height="413" alt="image" src="https://github.com/user-attachments/assets/feac727d-50dd-45a5-b7f3-df9be83aaac6" />
+📌 Refer to the below screenshots: (left to right)
+
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/eccb3733-9b03-4668-8e1c-086e94839590" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/feac727d-50dd-45a5-b7f3-df9be83aaac6" />
 
 ### Policy Validation and Testing:
 - Performed controlled testing to validate enforcement of Safe Links and Safe Attachments policies.
@@ -63,9 +65,10 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - Verified policy behavior through message inspection in Defender.
   - Confirmed that Safe Links and Safe Attachments protections were actively applied to the message content.
 
-📌The below screenshots demonstrate policy enforcement and inspection results within Microsoft Defender.
-<img width="749" height="286" alt="image" src="https://github.com/user-attachments/assets/b1a55330-82df-4099-8c4c-7062c319b7eb" />
-<img width="749" height="374" alt="image" src="https://github.com/user-attachments/assets/eb301f83-3db1-412c-ab57-d997452d69a1" />
+📌 Refer to the below screenshots: (left to right)
+
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/b1a55330-82df-4099-8c4c-7062c319b7eb" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/eb301f83-3db1-412c-ab57-d997452d69a1" />
 
 ### Email Investigation and Threat Analysis:
 - Initiated an investigation using Microsoft Defender for a suspicious email alert.
@@ -79,10 +82,11 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - Return-Path
   - X-Forefront-Antispam-Report
 
-📌 Below are the screenshots captured during the Email Workflow Analysis:
-<img width="749" height="317" alt="image" src="https://github.com/user-attachments/assets/fdaca9c9-835b-4cb7-80cf-f1c9a2e992fa" />
-<img width="748" height="418" alt="image" src="https://github.com/user-attachments/assets/62abcffd-af78-4f77-b29b-178c9fb39453" />
-<img width="751" height="431" alt="image" src="https://github.com/user-attachments/assets/7a65c3e8-4909-4499-ab90-13199f030b59" />
+📌 Refer to the below screenshots: (left to right)
+
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/fdaca9c9-835b-4cb7-80cf-f1c9a2e992fa" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/62abcffd-af78-4f77-b29b-178c9fb39453" />
+<img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/7a65c3e8-4909-4499-ab90-13199f030b59" />
 
 #### Threat Intelligence Correlation (OSINT):
 - Investigated embedded URL using VirusTotal.
@@ -91,9 +95,10 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - IP had prior malicious reports. (last seen ~5 months ago)
   - Associated with suspicious activity patterns consistent with phishing infrastructure.
 
-📌 Below are the screenshots of the OSINT performed:
-<img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/51c431c0-4be2-449b-8081-a90c1a128be9" />
-<img width="749" height="457" alt="image" src="https://github.com/user-attachments/assets/950fa6c8-9d41-494a-b4c6-fe89911c637a" />
+📌 Refer to the below screenshots: (left to right)
+
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/51c431c0-4be2-449b-8081-a90c1a128be9" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/950fa6c8-9d41-494a-b4c6-fe89911c637a" />
 
 ### Incident Response Action:
 - Based on corroborated OSINT findings and Defender telemetry:
@@ -101,10 +106,9 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
   - Executed remediation by deleting the email from user mailboxes.
   - Prevented further user interaction with the phishing content.
 
- 📌 Screenshot as below:
+📌 Refer to the below screenshot:
  
-<img width="749" height="412" alt="image" src="https://github.com/user-attachments/assets/bad41887-5f9b-412a-a7af-0dd5a54e033f" />
-
+<img width="785" height="450" alt="image" src="https://github.com/user-attachments/assets/bad41887-5f9b-412a-a7af-0dd5a54e033f" />
 
 ## 🚨 SOC Phishing Investigation Report:
 
