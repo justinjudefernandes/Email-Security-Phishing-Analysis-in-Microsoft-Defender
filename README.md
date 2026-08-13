@@ -113,7 +113,7 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
 - Recipient: bob@corp88[.]onmicrosoft[.]com
 - Subject: Salary Revision
 - Sender Email: strangeaccount88@proton[.]me
-- Sender IP Address: 79.135.106.97
+- Sender IP Address: 79[.]135[.]106[.]97
 - Attachment: Salary Revision[.]docx
 - Embedded URL: hxxps[://]shareholds[.]com/nam/…
 
@@ -121,7 +121,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 
 ### ⚠️ Indicators of Compromise (IOCs):
 - Malicious URL: Flagged by VirusTotal as malicious across multiple security vendors.
-- Sender IP (79.135.106.97): Reported as malicious on AbuseIPDB.
+- Sender IP (79[.]135[.]106[.]97): Reported as malicious on AbuseIPDB.
 - Phishing Infrastructure: External ProtonMail sender used to deliver payload.
 
 ### 📋 Investigation Summary:
@@ -136,8 +136,8 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 
 ### 🧐 Triage (5W & 1H):
 - Who:
-  - Sender: strangeaccount88@proton.me
-  - Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
+  - Sender: strangeaccount88@proton[.]me
+  - Source IP: 79[.]135[.]106[.]97 (malicious reputation confirmed via AbuseIPDB)
 - What:
   - Phishing email containing:
     - Malicious URL
@@ -145,7 +145,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - When:
   - June 18, 2026 – 21:04 (UTC +04:00)
 - Where:
-  - Recipient: bob@corp88.onmicrosoft.com
+  - Recipient: bob@corp88[.]onmicrosoft[.]com
   - Subject: Salary Revision
 - Why:
   - Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources.
