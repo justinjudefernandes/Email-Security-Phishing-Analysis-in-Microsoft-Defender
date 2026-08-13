@@ -108,7 +108,7 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
 
 ## 🚨 SOC Phishing Investigation Report:
 
-### Incident Overview:
+### 🕵️ Findings:
 - Timestamp: June 18, 2026 – 21:04 (UTC +04:00)
 - Recipient: bob@corp88[.]onmicrosoft[.]com
 - Subject: Salary Revision
@@ -119,12 +119,12 @@ Configured and validated Microsoft Defender for Office 365 Safe Links and Safe A
 
 A phishing email impersonating an HR-related salary update was delivered to the target mailbox. The message contained both a malicious document attachment and a credential-harvesting URL designed to prompt user interaction.
 
-### Indicators of Compromise (IOCs):
+### ⚠️ Indicators of Compromise (IOCs):
 - Malicious URL: Flagged by VirusTotal as malicious across multiple security vendors.
 - Sender IP (79.135.106.97): Reported as malicious on AbuseIPDB.
 - Phishing Infrastructure: External ProtonMail sender used to deliver payload.
 
-### Investigation Summary:
+### 📋 Investigation Summary:
 - At 21:04 UTC+04:00 on June 18, 2026, a phishing email titled “Salary Revision” was delivered to the organization’s mailbox. The email leveraged a social engineering lure related to payroll updates and contained:
   - A Microsoft Word attachment (Salary Revision[.]docx).
   - A malicious URL intended to redirect the user to an external resource.
@@ -134,7 +134,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - Whether the URL or attachment was accessed.
   - Whether credential theft, malware execution, or unauthorized access occurred.
 
-### Triage (5W1H Analysis):
+## 🧐 Triage (5W & 1H):
 - Who:
   - Sender: strangeaccount88@proton.me
   - Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
@@ -152,7 +152,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - How:
   - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation.
 
-### 🛑 Response Actions:
+## 🛑 Response Actions:
 - Removed phishing email from all affected mailboxes.
 - Blocked malicious indicators:
   - Sender email
@@ -170,7 +170,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
   - Attachment execution or download
 - Deployed targeted user awareness notification referencing the “Salary Revision” phishing attempt.
 
-### 💡 Recommendations:
+## 💡 Recommendations:
 - Enhance email security posture using:
   - Microsoft Defender for Office 365 Safe Links
   - Safe Attachments detonation policies
@@ -182,7 +182,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - Conduct periodic phishing simulation exercises to reinforce user awareness.
 - Perform gap analysis on email security controls to identify bypass conditions.
 
-### 🧠 Security Operations Takeaways:
+## 🧠 Security Operations Takeaways:
 - Email-based threats can bypass initial filters when using trusted-looking HR or payroll lures.
 - OSINT validation (VirusTotal, AbuseIPDB) is critical for confirming malicious indicators quickly.
 - Message header analysis provides key visibility into email authenticity and routing.
