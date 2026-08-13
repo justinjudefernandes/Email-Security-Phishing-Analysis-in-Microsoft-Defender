@@ -182,7 +182,7 @@ A phishing email impersonating an HR-related salary update was delivered to the 
 - Conduct periodic phishing simulation exercises to reinforce user awareness.
 - Perform gap analysis on email security controls to identify bypass conditions.
 
-### 🧠 Lessons Learned:
+### 🧠 Security Operations Takeaways:
 - Email-based threats can bypass initial filters when using trusted-looking HR or payroll lures.
 - OSINT validation (VirusTotal, AbuseIPDB) is critical for confirming malicious indicators quickly.
 - Message header analysis provides key visibility into email authenticity and routing.
