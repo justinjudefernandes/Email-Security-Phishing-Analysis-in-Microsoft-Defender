@@ -4,7 +4,7 @@
 Configure and validate Microsoft Defender for Office 365 email security controls, investigate phishing activity, enrich indicators using threat intelligence and OSINT, and document incident response actions and security control improvements.
 
 ## 📊 Project Overview:
-This project focuses on implementing Safe Links and Safe Attachments policies in Microsoft Defender for Office 365, validating email protection controls, investigating a phishing email, analyzing email headers, performing OSINT on indicators of compromise (IOCs), and documenting incident response actions.
+Configured and validated Microsoft Defender for Office 365 Safe Links and Safe Attachments policies, investigated a phishing email, analyzed message headers, enriched IOCs using threat intelligence and OSINT, and documented response actions and security recommendations.
 
 ### 🧰 Tools Used:
 - Microsoft Defender for Office 365
@@ -17,14 +17,14 @@ This project focuses on implementing Safe Links and Safe Attachments policies in
 - AbuseIPDB
 - Proton Mail
 
-### 🛡️ Skill Developed:
+### 🛠️ Capabilities Demonstrated:
 - Email security administration
 - Phishing investigation
-- Email header analysis
-- IOC identification and analysis
+- Email header and authentication analysis
+- IOC identification and enrichment
 - Threat intelligence validation
 - Incident response
-- Microsoft Defender for Office 365
+- Microsoft Defender for Office 365 investigation
 
 ### 📁 Key Deliverables:
 - Safe Links policy configuration
